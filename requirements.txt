@@ -1,0 +1,6 @@
+wheel
+setuptools
+flask
+flask-cors
+joblib
+pandas

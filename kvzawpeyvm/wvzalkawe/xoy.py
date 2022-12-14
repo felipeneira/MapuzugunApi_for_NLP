@@ -388,7 +388,10 @@ Xoy('dO19', 'am$', True,2,False, 'sirve para expresar propósito',True,100),
 Xoy('dO20', 'v{0,1}n$', True,2,False, 'verbo sin conjugar',True,100),
 
 ]
-sustantivosAdjetivos =[
-]
+
+
+sustantivosAdjetivos  = [Xoy(row[1][0],row[1][1],row[1][2],row[1][3],row[1][4],row[1][5],row[1][6],row[1][7]) for row in pd.read_csv('kvzawpeyvm/wvzalkawe/susadj.csv',header=None,doublequote='"').iterrows()]
+
+
 
 

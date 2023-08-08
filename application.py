@@ -13,12 +13,9 @@ import re
 #import random 
 #import os
 import joblib
-app = Flask(__name__)
-cors = CORS(app,resources={r'/*': {'origins': '*'}})
-app.config['CORS_HEADERS'] = 'Content-Type'
-
-
-
+application = Flask(__name__)
+cors = CORS(application,resources={r'/*': {'origins': '*'}})
+application.config['CORS_HEADERS'] = 'Content-Type'
 
 encoder = json.JSONEncoder()
 decoder = json.JSONDecoder()
@@ -29,19 +26,19 @@ grafs = json.load(open('config/ab_graf.json','r'))
 zugun = json.load(open('config/zugun.json','r'))
 rulpawe2rakin= json.load(open('config/rulpawe2rakin.json','r'))
 
-@app.route('/', methods=['GET'])
+@application.route('/', methods=['GET'])
 def konwe():    
     return encoder.encode('Mari mari! tami mvlerki tati api tami kelluaetu kim mapuzugual!!')
 
 ##<>VARIABLE
 
-@app.route('/api/narvmal/metadata/', methods=['GET'])
+@application.route('/api/narvmal/metadata/', methods=['GET'])
 def narvmal_metadata():
     return encoder.encode(zugun)
 
 
 
-@app.route('/api/rulpazugual/', methods=['POST'])
+@application.route('/api/rulpazugual/', methods=['POST'])
 def rulpazugual():
     response = {}
     if request.method == 'POST':
@@ -57,7 +54,7 @@ def rulpazugual():
     return encoder.encode(response)   
 
 
-@app.route('/api/wvzalkafe/', methods=['POST'])
+@application.route('/api/wvzalkafe/', methods=['POST'])
 def pegelwe():
     params=request.get_json()
     response={}
@@ -79,7 +76,7 @@ def pegelwe():
     return encoder.encode(response)   
 
 
-@app.route('/api/chuchiWirintukun/', methods=['POST'])
+@application.route('/api/chuchiWirintukun/', methods=['POST'])
 def kimChuchiWirintukun():
     response = {}
     if request.method == 'POST':    
@@ -105,7 +102,7 @@ def kimChuchiWirintukun():
     return encoder.encode(response)   
 
         
-@app.errorhandler(404)
+@application.errorhandler(404)
 def page_not_found(error):
     response={}
     response['msg'] = 'Chew amuleimi cha?' 
@@ -113,5 +110,5 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    #app.run('127.0.0.1', 5001, debug=True)
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    application.run('127.0.0.1', 5001, debug=True)
+   # application.run(host='0.0.0.0', port=5000, debug=True,ssl_context='adhoc')

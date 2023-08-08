@@ -4,7 +4,7 @@
 "SA3","yvze",False,0,True," s grasa",False,0
 "SA4","yv",False,0,True,"s nariz",False,0
 "SA5","yupi",False,0,True," s hombro,",False,0
-"SA6","yupe",False,0,True," s [zool.] erizo (Loxechinus albus)",False,0
+"SA6","yupe",False,0,True, s [zool.] erizo (Loxechinus albus),False,0
 "SA7","yuge",False,0,True,"  adj,afilado, filoso, puntiagudo",False,0
 "SA8","yug",False,0,True," adj,afilado, filoso, puntiagudo",False,0
 "SA9","yukuko",False,0,True," s [ornit.] codorniz (Callipepla californica)",False,0
@@ -435,7 +435,7 @@
 "SA432","xurew",False,0,True," s [ornit.] churrete",False,0
 "SA433","wej xuna",False,0,True," s puñado (una mano)",False,0
 "SA434","xumu",False,0,True," [Chez.] xomv",False,0
-"SA435","xumaw",False,0,True," s montón",False,0
+"SA435","xumaw",False,0,True, s montón,False,0
 "SA436","xumaq",False,0,True," s polvo, tierra",False,0
 "SA437","xulixuli",False,0,True," s codo 1",False,0
 "SA438","xuli",False,0,True," s ciervo, venado",False,0
@@ -3488,3 +3488,5 @@
 "SA3480","cawvn acawaj",False,0,True," s [astr.] las Pléyades del Sur",False,0
 "SA3481","acawaj",False,0,True," s [ornit., Qu.] gallina, polla | s [astr.] las Pléyades del Sur",False,0
 "SA3482","fantepu",False,0,True,"adv en este tiempo, actualmente",False,0
+"SA3483","me",False,0,True,"excremento, caca",False,0
+"SA3484","ge",False,0,True,"ojo(s)",False,0

@@ -9,7 +9,7 @@ from kvzawpeyvm.rulpawirintukuwe.Reglas import reglas12
 # =============================================================================
 
 #glob para abrir todo al mismo tiempo
-lista_files = glob.glob('C:/Users/User/Documents/GitHub/Linguistica/Mapudungun/ML/Textos/entrevistas_hasler/*.txt') 
+lista_files = glob.glob(r'C:\Users\User\Documents\GitHub\MapuzugunApi_for_NLP\Textos\entrevistas_hasler/*.txt') 
 #Extraer nombres
 corpus = {file[46:-4]: open(file,'r', encoding="utf-8").read() for file in lista_files} 
 del lista_files
